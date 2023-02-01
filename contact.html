@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/contact.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="nav-header">
+        <div id="gear-img" class="gear-img">
+            <img src="images/gear.png" alt="gear">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About Me</a>
+                </li>
+                <li>
+                    <a href="projects.html">My Projects</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Content-->
+    <main>
+
+        <h1>Get in touch!</h1>
+
+        <p>Interested on my work? Need to hire some hours to finish a project? Contact me:</p>
+
+        <form method="get">
+            <p>
+            <fieldset>
+
+                <!--First field: Customer information-->
+                <legend>Your Information:</legend>
+
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required />
+                </div>
+
+                <div>
+                    <label for="company-name">Company Name:</label>
+                    <input type="text" name="company-name" id="company-name" />
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" required />
+                </div>
+
+                <div>
+                    <label for="country">Country:</label>
+                    <input type="text" name="country" id="country" required />
+                </div>
+
+            </fieldset>
+            </p>
+
+            <p>
+                Do you already know exactly what you need? Then upload a sketch, photo of your need or describe it
+                below:
+            </p>
+
+            <p>
+            <fieldset>
+                <!--Second field: Customer Files and explanation-->
+                <legend>Your Files</legend>
+
+                <div>
+                    <label for="file"></label>
+                    <input type="file" name="file-upload" id="file-upload" accept=".pdf,.jpg,.jpeg,.png,.dwg,.dxf,.svg,.step "
+                        style="display:none;" />
+                    <label for="file-upload">Click Here to Upload Your File</label>
+                </div>
+
+                <div>
+                    <div>
+                        <label>Describe your Project:</label>
+                    </div>
+                    <textarea cols="60" rows="15"></textarea>
+                </div>
+
+                <div>
+                    <label for="due-date">Estimated Due Date </label>
+                    <input type="date" name="due-date" id="due-date" required />
+                </div>
+
+            </fieldset>
+            </p>
+
+            <p>
+                <input type="submit" value="Submit" />
+            </p>
+
+
+        </form>
+        <div class="button"> </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="copyright" name="copyright">
+            Copyright <strong>&copy</strong> 2017.<br />Developed by <strong>Breno Carvalho</strong>.
+        </div>
+    </footer>
+</body>
+
+</html>
